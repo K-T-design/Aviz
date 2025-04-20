@@ -1,0 +1,2 @@
+E:/Pro/Flutter_projs/aviz/android/app/.cxx/Debug/4572331t/x86/CMakeFiles/edit_cache.dir
+E:/Pro/Flutter_projs/aviz/android/app/.cxx/Debug/4572331t/x86/CMakeFiles/rebuild_cache.dir
