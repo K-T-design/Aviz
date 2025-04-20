@@ -142,6 +142,11 @@ class AuthRepo {
     return _authLocalDataSrc.isFirstEntry();
   }
 
+  Future<Result<bool>> logout() async {
+    final result = await _authLocalDataSrc.removeToken();
+    return Result.ok(result);
+  }
+
   // Close Streams
   void close() {
     if (!_userSubject.hasListener) {

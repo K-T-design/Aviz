@@ -59,7 +59,7 @@ class OtpView extends HookWidget {
           if (verifyOtpStatus is VerifyOtpSuccess) {
             Navigator.pushNamedAndRemoveUntil(
               context,
-              AppRoutes.home,
+              AppRoutes.main,
               (route) => false,
             );
           } else if (verifyOtpStatus is VerifyOtpError) {
