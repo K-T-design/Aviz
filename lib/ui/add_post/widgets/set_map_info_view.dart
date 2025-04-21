@@ -1,3 +1,4 @@
+import 'package:aviz/core/constants/texts/app_texts.dart';
 import 'package:aviz/core/navigation/routes/app_routes.dart';
 import 'package:aviz/core/theme/app_sizes.dart';
 import 'package:aviz/core/widgets/main_button.dart';
@@ -40,7 +41,7 @@ class SetMapInfoView extends StatelessWidget {
           const SliverToBoxAdapter(child: SizedBox(height: 16)),
           const SliverToBoxAdapter(
             child: Text(
-              'بعد انتخاب محل دقیق روی نقشه میتوانید نمایش آن را فعال یا غیر فعال کید تا حریم خصوصی شما خفظ شود.',
+              AppTexts.mapPolicy,
               style: TextStyle(
                 color: Colors.grey,
               ),

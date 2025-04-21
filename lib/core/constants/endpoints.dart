@@ -1,5 +1,5 @@
 abstract class Endpoints {
-  static const _baseUrl = 'http://192.168.110.233:8080';
+  static const _baseUrl = 'YOUR_BASE_URL';
 
   // User
   static const signup = '$_baseUrl/users/v1/signup';
