@@ -129,6 +129,9 @@
 ---
 
 #### Demo Video
-Video will be added here soon
+
+https://github.com/user-attachments/assets/9b9ad818-79f1-413a-ab62-cb1eedba889a
+
+
 
 
