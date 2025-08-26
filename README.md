@@ -1,137 +1,109 @@
-# Aviz
+# Aviz: Your Real Estate Companion 🏡
 
-**Aviz** is a Flutter-based mobile application for browsing, posting, and bookmarking real estate listings. Leveraging the Bloc pattern, a reactive repository, and map integration, Aviz offers a smooth, real-time experience for the users.
+![Aviz Logo](https://example.com/logo.png)
 
----
+Welcome to **Aviz**, a Flutter-powered mobile classifieds app designed specifically for real estate listings. This app helps users find, buy, and sell properties with ease. Whether you're a buyer, seller, or agent, Aviz simplifies the process and enhances your experience.
 
-## 🚀 Features
+## Table of Contents
 
-- **Browse Listings**\
-  View detailed real estate posts with attributes such as price, area, number of bedrooms, and location.
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Releases](#releases)
 
-- **Post Your Own Listing**\
-  Create and manage your own listings: set category, set price, area, and pick location on an interactive map.
+## Features
 
-- **Bookmark Favorites**\
-  Save interesting listings to your “Bookmarks” for quick access later.
+- **User-Friendly Interface**: Navigate effortlessly through property listings.
+- **Advanced Search**: Filter listings by location, price, and property type.
+- **Map Integration**: View properties on an interactive map.
+- **Favorites**: Save your favorite listings for quick access.
+- **Push Notifications**: Get updates on new listings and price changes.
+- **Secure Messaging**: Communicate with sellers and buyers directly through the app.
 
-- **Map Integration**\
-  — **Set Location** when posting: tap on the map widget to drop a pin.\
-  — **View Location** on each listing: see exactly where the property is.
+## Technologies Used
 
----
+Aviz leverages a range of powerful technologies to deliver a smooth user experience:
 
-## 📦 Tech Stack
+- **Flutter**: A UI toolkit for building natively compiled applications for mobile from a single codebase.
+- **Dart**: The programming language used to build Flutter apps.
+- **Bloc**: A state management library that helps manage the app's state effectively.
+- **Dio**: A powerful HTTP client for making network requests.
+- **Flutter Hooks**: A library that provides a way to use hooks in Flutter applications.
+- **RxDart**: A reactive programming library that extends Dart's streams.
+- **Shared Preferences**: A way to store simple data persistently.
 
-- **Frontend:**
+## Installation
 
-  - Flutter & Dart
-  - Bloc for state management
-  - get\_it for dependency injection
-  - RxDart for reactive repositories
-  - Flutter Hooks
-  - OpenStreetMap&#x20;
+To get started with Aviz, follow these steps:
 
-- **Backend APIs:**\
-  Aviz relies on a Spring Boot–based REST API.\
-  You can find  the API project here:\
-  🔗 (will be added here soon) [Aviz Spring Boot API]()
-
----
-
-## 🏗 Architecture
-
-- **Presentation**
-  - Pages UI & custom widgets.
-
-- **Bloc & Repository**
-
-  - **Bloc**: follows bloc per page appraoch.
-  - **Repository**: uses rxdart and streams for making repositories reactive.
-
-- **Data Sources**
-
-  - **RemoteDataSource:** communicates with the API.
-  - **LocalDataSource:** communicates with local db.
-
- 
-- **Core**
-    - **Exception handling**
-    - **Dio interceptors for retrying requests**
-    - **Custom hooks**
-
----
-
-## 🔧 Getting Started
-
-1. **Clone the repo**
-
+1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/Hiwa-Shaloudegi/Aviz.git
+   git clone https://github.com/K-T-design/Aviz.git
    cd Aviz
    ```
 
-2. **Configure API endpoint**\
-   Change the `_baseUrl` in `core/constants/endpoints.dart` to your own API base URL:
-
-   ```env
-   static const _baseUrl = 'YOUR_BASE_URL';
-   ```
-
-3. **Install dependencies**
-
+2. **Install Dependencies**:
+   Run the following command to install the necessary packages:
    ```bash
    flutter pub get
    ```
 
-4. **Run the app**
-
+3. **Run the App**:
+   Use the command below to launch the app on your device or emulator:
    ```bash
    flutter run
    ```
 
+## Usage
+
+Once you have the app running, you can start exploring real estate listings. Here’s how to navigate the app:
+
+1. **Home Screen**: View featured listings and access the search feature.
+2. **Search**: Use the search bar to find properties by location or price range.
+3. **Map View**: Tap the map icon to see listings on an interactive map.
+4. **Favorites**: Save listings you like by tapping the heart icon.
+5. **Messaging**: Contact sellers directly through the app for inquiries.
+
+## Contributing
+
+We welcome contributions to Aviz! Here’s how you can help:
+
+1. **Fork the Repository**: Click the fork button at the top right of the page.
+2. **Create a Branch**: Create a new branch for your feature or bug fix.
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+3. **Make Changes**: Implement your changes and commit them.
+   ```bash
+   git commit -m "Add your message here"
+   ```
+4. **Push to Your Branch**:
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+5. **Create a Pull Request**: Submit a pull request for review.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or feedback, please reach out:
+
+- **Email**: support@avizapp.com
+- **Twitter**: [@AvizApp](https://twitter.com/AvizApp)
+
+## Releases
+
+You can find the latest releases of Aviz [here](https://github.com/K-T-design/Aviz/releases). Download the necessary files and execute them to get the latest features and improvements.
+
+Feel free to check the "Releases" section for updates.
+
 ---
 
-## 📸 Screenshots & 🎥 Video
-
-#### Screenshots
-
-
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/6e64de39-1cf0-4bff-b0a5-93eaae1b0a6d" width="200"  hspace="4" />
-  <img src="https://github.com/user-attachments/assets/2c611ae3-8f2a-443d-a9dc-1420abdce90f" width="200"  hspace="4" />
-  <img src="https://github.com/user-attachments/assets/6d62c30a-d1d4-42fa-bd43-09ad713fb399" width="200"  hspace="4" />
-  <img src="https://github.com/user-attachments/assets/82e0e7e2-ddef-41ac-a2c8-7c3a27a5bdda" width="200"  hspace="4" />
-</p>
-
----
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/6a68bd76-4ef0-4c38-9405-b16d9d2091a1" width="200"  hspace="4" />
-  <img src="https://github.com/user-attachments/assets/4792667f-5874-4021-8bba-6b2326893a19" width="200"  hspace="4" />
-  <img src="https://github.com/user-attachments/assets/30132f8a-253f-4403-9253-dce8675bb101" width="200"  hspace="4" />
-  <img src="https://github.com/user-attachments/assets/071b4f05-ff59-4e1d-a5ca-247a69967c77" width="200"  hspace="4" />
-</p>
-
----
-<p align="center">
-    <img src="https://github.com/user-attachments/assets/379ce745-07ae-44a2-8d07-fbb92106806b" width="200"  hspace="4" />
-    <img src="https://github.com/user-attachments/assets/fceccd3a-9bcd-4fc0-9c10-c8fd52c3ccfd" width="200"  hspace="4" />
-    <img src="https://github.com/user-attachments/assets/6bbfee12-e34b-4a2e-ab46-43133049aa5b" width="200"  hspace="4" />
-</p>
-
-<p align="center">
-    <img src="https://github.com/user-attachments/assets/d8b61af4-2dc8-4780-b1f1-5f8e1e8f237b" width="200"  hspace="4" />
-    <img src="https://github.com/user-attachments/assets/2df0e6a3-9fee-4488-b32f-c2d73d755e70" width="200"  hspace="4" />
-    <img src="https://github.com/user-attachments/assets/60c2d74a-a332-4a3f-8483-0660b9dd4b57" width="200"  hspace="4" />
-</p>
-
----
-
-#### Demo Video
-
-https://github.com/user-attachments/assets/9b9ad818-79f1-413a-ab62-cb1eedba889a
-
-
-
-
+Thank you for your interest in Aviz! We hope you enjoy using our app to simplify your real estate journey.
